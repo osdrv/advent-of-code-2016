@@ -1,0 +1,22 @@
+b = a
+b--
+d = a
+a = 0
+L2: c = b
+L1: a++
+c--
+if c != 0 {
+    goto L1
+}
+d--
+if d != 0 {
+    goto L2
+}
+b--
+c = b
+d = c
+L3: d--
+c++
+if d != 0 {
+    goto L3
+}
